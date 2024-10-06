@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRIMAVERA Business Software Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="/imagens/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+        <!-- Header -->
+        <header id="header">
+            <section id="headerContent">
+                <a href="https://pt.primaverabss.com/pt/" target="_blank"><img src="./imagens/logotipo.png" alt="Logo Primavera"></a>
+                <section id="icons">
+                    <p id="welcomeMessage"></p>
+                    <input type="text" id="campo" />
+                    <i class="fa-solid fa-search" id="search" title="Pesquisa"></i>
+                    <i class="fa-solid fa-user-plus" title="Registo"></i>
+                    <i class="fa-solid fa-arrow-right-to-bracket" title="Login"></i>
+                    <i class="fa-regular fa-user" title="Perfil" style="display: none;"></i>
+                    <i class="fa-solid fa-arrow-right-from-bracket" title="Logout" style="display: none;"></i>
+                    <i class="fa-solid fa-bars" id="hamburger"></i>
+                </section>
+            </section>
+            <section id="modal">
+                <section id="modalContent">
+                    <h2>Controlo de acessos</h2>
+                    <p id="errorMsg"></p>
+            
+                    <form id="loginForm">
+                        <section class="formRow">
+                            <label for="emailInput">E-mail:</label>
+                            <input type="text" id="emailInput" class="input">
+                        </section>
+            
+                        <section class="formRow">
+                            <label for="senha">Senha:</label>
+                            <input type="password" id="senha" class="input">
+                        </section>
+            
+                        <section id="buttonContainer">
+                            <button id="validar" type="button">Validar</button>
+                        </section>
+                    </form>
+                    <span id="btClose">x</span>
+                </section>
+            </section>
+            <!-- Menu -->
+            <nav id="mainMenu">
+                <ul>
+                    <li><a href="#">Contabilistas</a></li>
+                    <li><a href="#">Setor Privado</a></li>
+                    <li><a href="#">Setor Público</a></li>
+                    <li><a href="#">Formação</a></li>
+                    <li><a href="#">Parceiros</a></li>
+                    <li><a href="#">Carreiras</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <!-- Banner -->
+            <section id="banner">
+                <section id="bannerText">
+                    <h1>TECNOLOGIA PARA VENCER</h1>
+                    <p>Conheça os casos de sucesso PRIMAVERA</p>
+                    <p>Na linha da frente na digitalização de empresas</p>
+                    <a href="https://pt.primaverabss.com/pt/pagina/tecnologia-para-vencer/" class="btn" target="_blank">Saiba mais ></a>
+                </section>
+                <img src="./imagens/computador.png" alt="Computador">
+            </section>
+
+            <!-- Secção Missão -->
+            <section id="mission">
+                <h2 class="sectionTitle">Missão</h2>
+                <section id="missionContent">
+                    <img src="./imagens/missao.jpg" alt="Imagem Missão">
+                    <section id="missionText">
+                        <h3>
+                            Simplificar a vida nas organizações, aumentando a criação de valor, é a nossa grande missão.
+                        </h3>
+                        <p>
+                            Desafiar o desconhecido. Explorar possibilidades. Transpor barreiras. Inovar. São estas as motivações que desde 1993 nos conduzem na busca de soluções de gestão inovadoras que simplificam a vida nas organizações.
+                        </p>
+                        <p>
+                            A paixão pela inovação na gestão empresarial está no ADN da PRIMAVERA. Um entusiasmo contagiante que colocamos ao serviço das organizações, disponibilizando-lhes um leque crescente de soluções de gestão que agilizam as operações e aumentam a rentabilidade do negócio.
+                        </p>
+                        <p>
+                            Acreditamos na força das ideias. Auxiliamos a sua concretização. Impulsionamos os resultados. Defendemos que com a tecnologia certa, crescer é o caminho. Do mais pequeno micronegócio a uma grande multinacional, disponibilizamos soluções ajustadas, ágeis e funcionais que dão mais força ao negócio.
+                        </p>
+                        <p>
+                            <a href="https://pt.primaverabss.com/fotos/editor2/brochurainstitucional_2017_web2.pdf">» Conheça a nossa brochura institucional</a>
+                        </p>
+                    </section>
+                </section>
+            </section>
+            
+            <hr>
+
+            <!-- Secção Equipa -->
+            <section id="team">
+                <h2 class="sectionTitle">Equipa</h2>
+                <section id="teamContent">
+                    <section class="teamMember">
+                        <img src="./imagens/foto1.png" alt="Membro da Equipa">
+                        <section class="teamInfo">
+                            <p>Daniela Alves</p>
+                            <p>Web Developer</p>
+                        </section>
+                    </section>
+
+                    <section class="teamMember">
+                        <img src="./imagens/foto2.png" alt="Membro da Equipa">
+                        <section class="teamInfo">
+                            <p>Manuela Ribeiro</p>
+                            <p>Front-end developer</p>
+                        </section>
+                    </section>
+
+                    <section class="teamMember">
+                        <img src="./imagens/foto3.png" alt="Membro da Equipa">
+                        <section class="teamInfo">
+                            <p>Bruna Silva</p>
+                            <p>Designer</p>
+                        </section>
+                    </section>
+                </section>
+            </section>
+
+            <hr>
+
+            <!-- Secção Oferta Formativa -->
+            <section id="trainingOffer">
+                <h2 class="sectionTitle">Oferta Formativa</h2>
+                <section id="slideContent" class="slider">
+                    <section id="firstSlide">
+                        <img src="./imagens/slider1.jpg" alt="image of a man working">
+                        <section class="slideText">
+                            <h2>PRIMAVERA Academy</h2>
+                            <h3>Juntos seremos mais fortes!</h3>
+                            <p>Aposte em novas competências</p>
+                        </section>
+                    </section>
+                    <section id="secondSlide">
+                        <img src="./imagens/slider2.jpg" alt="image of a women working">
+                        <section class="slideText">
+                            <h2>Online Seminar</h2>
+                            <h3>Legislação Laboral de A a Z</h3>
+                            <p>Atualize os seus conhecimentos</p>
+                        </section>
+                    </section>
+                    <section id="thirdSlide">
+                        <img src="./imagens/slider3.jpg" alt="image of a man working">
+                        <section class="slideText">
+                            <h2>RE_Start</h2>
+                            <h3>CODE Learning Academy</h3>
+                            <p>Juntos desenvolvemos o teu percurso de sucesso como Developer</p>
+                        </section>
+                    </section>
+                    <section id="fourthSlide">
+                        <img src="./imagens/slider4.jpg" alt="image of a man working">
+                        <section class="slideText">
+                            <h2>Marketing Digital</h2>
+                            <h3>CAproveite Desconto 20%</h3>
+                            <p>Virtual Classroom (Online)</p>
+                        </section>
+                    </section>
+                    <section id="fifthSlide">
+                        <img src="./imagens/slider5.jpg" alt="image of a man working">
+                        <section class="slideText">
+                            <h2>Programa SCORE</h2>
+                            <h3>Online | Virtual Classroom</h3>
+                            <p>Certifique-se como Profissional PRIMAVERA</p>
+                        </section>
+                    </section>
+                </section>
+            </section>
+        </main>
+        <!-- Footer -->
+        <footer id="footer">
+            <section id="primavera">
+                <h4>PRIMAVERA</h4>
+                <ul>
+                    <li><a href="#">Sobre a PRIMAVERA</a></li>
+                    <li><a href="#">Responsabilidade Social</a></li>
+                    <li><a href="#">Recrutamento</a></li>
+                    <li><a href="#">Os nossos Clientes</a></li>
+                    <li><a href="#">Referral Members</a></li>
+                    <li><a href="#">Consultoria</a></li>
+                    <li><a href="#">Suporte</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Developers Network</a></li>
+                    <li><a href="#">HelpCenter</a></li>
+                    <li><a href="#">MarketPlace</a></li>
+                </ul>
+            </section>
+            <section id="education">
+                <h4>EDUCATION</h4>
+                <ul>
+                    <li><a href="#">Teaching with Software</a></li>
+                    <li><a href="#">Education Talks</a></li>
+                    <li><a href="#">Education Labs</a></li>
+                    <li><a href="#">Study Visits</a></li>
+                    <li><a href="#">Formação de Docentes</a></li>
+                </ul>
+            </section>
+            <section id="noticiasEventos">
+                <h4>NOTICIAS E EVENTOS</h4>
+                <ul>
+                    <li><a href="#">Press Releases</a></li>
+                    <li><a href="#">Eventos e Webinars</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Newsletter</a></li>
+                </ul>
+            </section>
+            <section id="contactos">
+                <h4>CONTACTOS</h4>
+                <ul>
+                    <li><a href="#">Como Chegar</a></li>
+                    <li><a href="#">Contactar agora</a></li>
+                </ul>
+            </section>
+            <section id="site">
+                <h4>SITE</h4>
+                <ul>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Termos de Utilização</a></li>
+                    <li><a href="#">Mapa do Site</a></li>
+                </ul>
+            </section>
+        </footer>
+        <section id="contact">
+            <img src="./imagens/telefone.png" alt="telefone: 919 204 462">
+            <p id="phoneNumber">919 204 462</p>
+        </section>
+        <a href="#header" id="scrollTop">
+            <img src="./imagens/setacima.png" alt="Seta para cima">
+        </a>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.slider').bxSlider({
+                auto: true,
+                pause: 5000,
+            });
+        });
+    </script>
+    <script src="index.js"></script>
+</body>
+</html>

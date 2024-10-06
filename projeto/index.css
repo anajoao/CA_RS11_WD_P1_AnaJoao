@@ -1,0 +1,591 @@
+h1, h2, h5, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1400px;
+    overflow: auto;
+}
+
+.sectionTitle{
+    font-size: 2.5rem;
+    color: #3C368C;
+    font-weight: bold;
+    text-align: center;
+    margin: 0.83em 0;
+}
+
+#header{
+    background-color: #f5f5f5;
+}
+
+#headerContent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+}
+
+
+#headerContent a {
+    padding-left: 10px;
+}
+
+#welcomeMessage {
+    display: none;
+    margin-left: 20px;
+}
+
+
+#icons {
+    display: flex;
+    gap: 20px;
+    padding-right: 10px;
+    align-items: center;
+}
+
+#icons i {
+    cursor: pointer;
+}
+
+#icons p {
+    #icons p {
+        display: inline-block;
+        font-size: 14px;
+        margin-left: 10px;
+    }
+}
+
+#mainMenu {
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+#campo {
+    display: none;
+    flex-shrink: 1;
+    height: 30px;
+}
+
+#campo.show {
+    display: inline-block;
+    width: 300px;
+    border: 1px solid #aaa;
+}
+
+#modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.64);
+    z-index: 10;
+    display: none;
+}
+
+#modalContent {
+    box-sizing: border-box;
+    background-color: white;
+    width: 350px;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#modalContent h2 {
+    margin-bottom: 20px;
+}
+
+#btClose {
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    font-weight: bold;
+    border: 2px solid #666;
+    border-radius: 50%;
+    box-shadow: 3px 3px 5px #000;
+    user-select: none;
+    cursor: pointer;
+}
+
+#btClose:hover {
+    background-color: #666;
+    color: white;
+    
+}
+
+#btClose:active {
+    box-shadow: none;
+    top: -11px;
+    right: -13px;
+}
+
+#loginForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.formRow {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    white-space: nowrap;
+}
+
+.formRow label {
+    margin-right: 10px;
+}
+
+.formRow input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+#buttonContainer {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#validar {
+    background-color: #007bff; 
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#buttonContainer {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+}
+
+#validar:hover {
+    background-color: #0056b3; 
+}
+
+#errorMsg {
+    display: none;
+    margin: 15px 0;
+    font-size: 14px;
+}
+
+#mainMenu > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#mainMenu a {
+    text-decoration: none;
+    color: #a4a3a3;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#mainMenu a:hover {
+    color: #0075be;
+}
+
+#hamburger {
+    display: none;
+}
+
+
+
+#banner {
+    position: relative;
+    height: 500px;
+    background-image: url("./imagens/fundoBanner.jpg");
+    display: flex;
+    color: white;
+    margin-bottom: 40px;
+    box-sizing: border-box;
+}
+
+#bannerText {
+    padding-left: 40px;
+}
+
+#bannerText h1 {
+    margin-top: 40px;
+    font-size: 48px;
+}
+
+#bannerText p:first-of-type {
+    font-size: 30px;
+    padding-top: 10px;
+    color: #ccc;
+}
+
+#bannerText p:nth-of-type(2) {
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    font-style: italic;
+    color: white;
+}
+
+#banner img {
+    position: absolute;
+    right: 40px;
+    bottom: -40px;
+}
+
+#bannerText > .btn {
+    background-color: #f16248;
+    color: #f5f5f5;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#bannerText > .btn:hover {
+    background-color: #c8c8c8;
+    color: #252525;
+}
+
+#mission {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 70px;
+}
+
+#missionContent {
+    display: flex;
+    align-items: flex-start;
+    gap: 60px; 
+    justify-content: center; 
+}
+
+
+#missionText p {
+    color: #7d7d7d;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+#missionText>h3 {
+    color: #252525;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#missionText a {
+    color: #0075be;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#missionText a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border-bottom: 2px solid #7d7d7d;
+    margin-top: 40px;
+}
+
+#team {
+    display: flex;
+    flex-direction: column;
+}
+
+#team h2 {
+    margin: 0.83em 0;
+}
+
+#teamContent{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.teamMember {
+    position: relative;
+}
+
+.teamMember img{
+    display: block;
+    border-radius: 50%;
+    max-width: 100%;
+}
+
+.teamInfo p:first-of-type {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.teamInfo {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    
+}
+
+.teamInfo {
+    opacity: 0;
+}
+
+.teamMember:hover .teamInfo {
+    opacity: 1;
+}
+
+.teamMember:hover img {
+    border-radius: 0%;
+}
+
+#trainingOffer {
+    margin-bottom: 50px;
+}
+
+#slide #firstSlide, #slide #secondSlide, #slide #thirdSlide, #slide #fourthSlide, #slide #fifthSlide {
+    position: relative;
+}
+
+.slideText {
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.slideText h2 {
+    font-size: 42px;
+}
+
+#firstSlide h2 {
+    color: #f27d29;
+}
+
+#firstSlide h3, #firstSlide p {
+    color: #153c85;
+}
+
+#secondSlide h2, #fourthSlide h2 {
+    color: #153c85;
+}
+
+#thirdSlide h2 {
+    color: #ebc711;
+}
+
+#fifthSlide h2 {
+    color: #ff701e;
+}
+
+.slideText h3 {
+    font-size: 35px;
+    color: white;
+}
+
+.slideText p {
+    font-size: 26px;
+    color: white;
+    margin-top: 30px;
+}
+
+#footer {
+    background-color: #ebebeb;
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0;
+}
+
+#footer h4 {
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #252525;
+}
+
+#footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#footer ul li {
+    margin-bottom: 10px;
+}
+
+#footer a {
+    text-decoration: none;
+    color: #7d7d7d;
+}
+
+#footer a:hover {
+    text-decoration: underline;
+}
+
+#contact {
+    position: fixed;
+    right: 0;
+    bottom: 50%;
+    background-color: #252525;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+}
+
+#phoneNumber {
+    display: none;
+    color: #0acb84;
+    padding-left: 15px;
+    justify-items: center;
+}
+
+#contact:hover #phoneNumber {
+    display: inline;
+}
+
+#scrollTop {
+    position: fixed;
+    right: 20px;
+    bottom: 10px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+@media (max-width: 1100px) {
+    #banner img {
+        display: none;
+    }
+}
+
+@media (max-width: 800px) {
+
+    #header{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #mainMenu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center; 
+    }
+
+    #hamburger {
+        display: block;
+    }
+    
+
+    #mainMenu.show {
+        display: flex;
+    }
+
+    #mainMenu ul {
+        flex-direction: column;
+    }
+
+    #mainMenu li {
+        margin: 5px 0;
+    }
+
+    #banner {
+        height: 320px; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #bannerText {
+        text-align: center;
+        padding-left: 0;
+    }
+
+    #bannerText h1 {
+        font-size: 40px;
+        margin: 0;
+    }
+
+    #bannerText p:first-of-type {
+        font-size: 24px;
+    }
+
+    #bannerText p:nth-of-type(2) {
+        font-size: 20px;
+    }
+
+    #missionContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    #teamContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #footer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 30px;
+    }
+
+    #site {
+        grid-column: 2;
+    }
+
+    #contact {
+        display: none;
+    }
+
+    #scrollTop {
+        display: none;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1100px) {
+    #footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding-left: 30px;
+    }
+}

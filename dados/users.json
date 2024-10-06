@@ -1,0 +1,22 @@
+{
+    "utilizadores": [
+      {
+        "id": 1,
+        "email": "pedroremoaldo@mail.com",
+        "senha": "password123",
+        "nome": "Pedro Remoaldo",
+        "morada": "Rua das Flores, 123",
+        "cp": "1234-567",
+        "pais": "Portugal"
+      },
+      {
+        "id": 2,
+        "email": "anajoao@mail.com",
+        "senha": "password456",
+        "nome": "Ana João Oliveira",
+        "morada": "Avenida da Liberdade, 456",
+        "cp": "2345-678",
+        "pais": "Portugal"
+      }
+    ]
+  }
