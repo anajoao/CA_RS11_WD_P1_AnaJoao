@@ -86,7 +86,7 @@ async function login() {
             errorMsg.style.display = "block";
         }
     } catch (error) {
-        console.error("Erro ao obter os dados:", error);
+        console.error(error);
     }
 }
 
@@ -121,7 +121,7 @@ async function verification() {
                 userLoged(user.nome);
             }
         } catch (error) {
-            console.error("Erro ao verificar a autenticação:", error);
+            console.error(error);
         }
     } else {
         welcomeMessage.style.display = "none";
